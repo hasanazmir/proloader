@@ -1,0 +1,209 @@
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    font-family:Myriad Pro;
+    font-size: 14px;
+}
+
+.slide-pic{
+    position:relative;
+}
+.slide-text{
+    position:absolute;
+    left:35%;
+    text-align:center;
+    bottom:150px;
+    color: white;
+    
+    
+    
+}
+.single i{
+    border: 1px solid black;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.single i:hover{
+    background:red;
+    color:white;
+}
+
+.item img {
+    width: 100%;
+}
+
+
+/*
+.textline-area{
+    background-image: url(../img/mountain-4456560.jpg);
+    position: relative;
+    z-index: 1;
+}
+
+.textline-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: red;
+    opacity: .6;
+}
+*/
+
+img.timeline-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid darkblue;
+    padding: 2px;
+}
+
+.single-time-lineitem {
+    position: relative;
+}
+
+.single-time-lineitem:after {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    content: "";
+/*    top: -1px;*/
+    background: black;
+    z-index: -1;
+    margin-left: -1px;
+}
+
+
+.single-time-lineitem {
+    position: relative;
+    width: 150px;
+    margin: 0 auto 80px;
+}
+
+.timeline-text {
+    position: absolute;
+    
+    width: 400px;
+    left: -430px;
+    top: 50%;
+    height: 160px;
+    padding: 29px;
+    margin-top: -80px;
+}
+
+
+
+
+.single-time-lineitem:nth-child(2n+2) .timeline-text {
+    left: auto;
+    right: -430px;
+}
+
+.pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.icon i {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    line-height: 34px;
+    border-radius: 50%;
+    
+}
+.icon i:hover{
+    background-color:black;
+    color:white;
+}
+
+.single-sponsor img {
+    width: auto!important;
+}
+.single-sponsor {}
+.flex{
+    display: flex;
+}
+.ffd{
+    background-color: black;
+    color: white;
+}
+
+textarea.form-control {
+    height: 145px;
+}
+
+.footer i {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    line-height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background: #000;
+    
+}
